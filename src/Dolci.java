@@ -21,14 +21,14 @@ public class Dolci {
 	@Column(name = "descrizione")
 	private String descrizione;
 	@Column(name = "id_menu")
-	private int id_menu;
+	private int id;
 
 	
 	public void Dolce(String nome, double prezzo, String descrizione, int id_menu) {
         this.nome = nome;
         this.prezzo = prezzo;
         this.descrizione = descrizione;
-        this.id_menu = id_menu;
+        this.id = id_menu;
         
     }
 
