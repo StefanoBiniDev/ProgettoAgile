@@ -13,7 +13,7 @@ public class Dolci {
 
 	@Id
 	@Column(name = "id_portata")
-	private int id_portata;
+	private int id;
 	@Column(name = "nome")
 	private String nome;
 	@Column(name = "prezzo")
@@ -21,65 +21,37 @@ public class Dolci {
 	@Column(name = "descrizione")
 	private String descrizione;
 	@Column(name = "id_menu")
-	private int id;
-
-	
-	public void Dolce(String nome, double prezzo, String descrizione, int id_menu) {
-        this.nome = nome;
-        this.prezzo = prezzo;
-        this.descrizione = descrizione;
-        this.id = id_menu;
-        
-    }
-
-
-	public int getId_portata() {
-		return id_portata;
+	private int idMenu;
+	public int getId() {
+		return id;
 	}
-
-
-	public void setId_portata(int id_portata) {
-		this.id_portata = id_portata;
+	public void setId(int id) {
+		this.id = id;
 	}
-
-
 	public String getNome() {
 		return nome;
 	}
-
-
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
-
 	public double getPrezzo() {
 		return prezzo;
 	}
-
-
 	public void setPrezzo(double prezzo) {
 		this.prezzo = prezzo;
 	}
-
-
 	public String getDescrizione() {
 		return descrizione;
 	}
-
-
 	public void setDescrizione(String descrizione) {
 		this.descrizione = descrizione;
 	}
-
-
-	public int getId_menu() {
-		return id_menu;
+	public int getIdMenu() {
+		return idMenu;
+	}
+	public void setIdMenu(int idMenu) {
+		this.idMenu = idMenu;
 	}
 
-
-	public void setId_menu(int id_menu) {
-		this.id_menu = id_menu;
-	}
 	
 }
