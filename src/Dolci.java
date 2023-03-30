@@ -21,12 +21,6 @@ public class Dolci {
 	@Column(name = "id_menu")
 	private int idMenu;
 	
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
 	public String getNome() {
 		return nome;
 	}
@@ -51,17 +45,14 @@ public class Dolci {
 	}
 	public void setIdMenu(int idMenu) {
 		this.idMenu = idMenu;
-
+	}
 
 	public int getId() {
 		return id;
 	}
 
-
 	public void setId(int id_menu) {
 		this.id = id_menu;
->>>>>>> Sviluppo-Primi
 	}
-
 	
 }

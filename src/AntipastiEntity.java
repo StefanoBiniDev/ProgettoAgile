@@ -3,7 +3,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "Antipasti")
-public class AntipastiEntity implements JpaEntity {
+public class AntipastiEntity  {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_portata")
