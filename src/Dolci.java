@@ -20,6 +20,7 @@ public class Dolci {
 	private String descrizione;
 	@Column(name = "id_menu")
 	private int idMenu;
+	
 	public int getId() {
 		return id;
 	}
@@ -44,13 +45,12 @@ public class Dolci {
 	public void setDescrizione(String descrizione) {
 		this.descrizione = descrizione;
 	}
-<<<<<<< HEAD
+
 	public int getIdMenu() {
 		return idMenu;
 	}
 	public void setIdMenu(int idMenu) {
 		this.idMenu = idMenu;
-=======
 
 
 	public int getId() {

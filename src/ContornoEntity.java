@@ -26,7 +26,7 @@ public class ContornoEntity {
 	
 	@ManyToOne
 	@JoinColumn(name = "id_menù")
-//	private MenuEntity menuEntity;
+	private MenuEntity menuEntity;
 	
 
 	public void addContorno(ContornoEntity contornoEntity) {
