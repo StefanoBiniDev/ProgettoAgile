@@ -1,17 +1,18 @@
+package progetto;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 
 
+@SuppressWarnings("serial")
 @Entity
 @Table(name= "Secondi")
 	
-public class SecondiEntity {
+public class SecondiEntity implements JPAEntity{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

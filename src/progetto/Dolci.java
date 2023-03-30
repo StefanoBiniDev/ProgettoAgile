@@ -1,12 +1,14 @@
+package progetto;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+@SuppressWarnings("serial")
 @Entity
 @Table(name = "Dolci")
 
-public class Dolci {
+public class Dolci implements JPAEntity{
 
 
 	@Id

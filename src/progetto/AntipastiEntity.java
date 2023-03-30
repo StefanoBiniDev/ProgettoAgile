@@ -1,9 +1,11 @@
+package progetto;
 
 import javax.persistence.*;
 
+@SuppressWarnings("serial")
 @Entity
 @Table(name = "Antipasti")
-public class AntipastiEntity  {
+public class AntipastiEntity implements JPAEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_portata")

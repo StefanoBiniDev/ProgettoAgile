@@ -1,12 +1,14 @@
+package progetto;
 
 
 import java.util.*;
 
 import javax.persistence.*;
 
+@SuppressWarnings("serial")
 @Entity
 @Table(name = "Menu")
-public class MenuEntity {
+public class MenuEntity implements JPAEntity{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
