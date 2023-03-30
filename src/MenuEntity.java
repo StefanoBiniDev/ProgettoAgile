@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 import java.util.*;
 
@@ -50,4 +51,19 @@ public class MenuEntity implements JpaEntity {
 
 		this.antipasti.add(antipastiEntity);
 	}
+=======
+import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "Primi")
+public class MenuEntity {
+
+	
+	@OneToMany(mappedBy = "id_menu")
+	private Set<MenuEntity> menu;
+>>>>>>> Sviluppo-Primi
 }
