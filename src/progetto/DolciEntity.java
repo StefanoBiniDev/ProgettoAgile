@@ -8,7 +8,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "Dolci")
 
-public class Dolci implements JPAEntity{
+public class DolciEntity implements JPAEntity{
 
 
 	@Id
