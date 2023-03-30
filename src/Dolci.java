@@ -1,7 +1,5 @@
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -73,13 +71,13 @@ public class Dolci {
 	}
 
 
-	public int getId_menu() {
-		return id_menu;
+	public int getId() {
+		return id;
 	}
 
 
-	public void setId_menu(int id_menu) {
-		this.id_menu = id_menu;
+	public void setId(int id_menu) {
+		this.id = id_menu;
 	}
 	
 }
