@@ -36,6 +36,6 @@ descrizione varchar(100),
 tipo VARCHAR (100),
 id_menù int not null,
 primary key(id_contorno),
-foreign key(id_menù) references menù(id_menù));
+foreign key(id_menu) references menu(id_menu));
 
 
