@@ -39,3 +39,24 @@ primary key(id_contorno),
 foreign key(id_menù) references menù(id_menù));
 
 
+CREATE TABLE `bevande` (
+  `id_portata` int NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) NOT NULL,
+  `prezzo` decimal(5,2) NOT NULL,
+  `descrizione` varchar(100) DEFAULT NULL,
+  `id_menu` int NOT NULL,
+  `alcolico` tinyint(1) NOT NULL,
+  `quantita` decimal(5,2) DEFAULT NULL,
+  PRIMARY KEY (`id_portata`),
+  FOREIGN KEY (`id_menu`) REFERENCES `menu` (`id_menu`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `dolci` (
+  `id_portata` int NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) NOT NULL,
+  `prezzo` decimal(5,2) NOT NULL,
+  `descrizione` varchar(100) DEFAULT NULL,
+  `id_menu` int NOT NULL,
+  PRIMARY KEY (`id_portata`),
+  FOREIGN KEY (`id_menu`) REFERENCES `menu` (`id_menu`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
