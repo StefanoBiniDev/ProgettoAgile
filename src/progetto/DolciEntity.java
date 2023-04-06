@@ -4,13 +4,10 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@SuppressWarnings("serial")
 @Entity
 @Table(name = "Dolci")
 
-public class DolciEntity implements JPAEntity{
-
-
+public class DolciEntity {
 	@Id
 	@Column(name = "id_portata")
 	private int id;

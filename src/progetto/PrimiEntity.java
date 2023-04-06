@@ -8,10 +8,9 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-@SuppressWarnings("serial")
 @Entity
 @Table(name = "Primi")
-public class PrimiEntity implements JPAEntity{
+public class PrimiEntity{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

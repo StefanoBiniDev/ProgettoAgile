@@ -2,10 +2,10 @@ package progetto;
 
 import javax.persistence.*;
 
-@SuppressWarnings("serial")
 @Entity
 @Table(name = "Antipasti")
-public class AntipastiEntity implements JPAEntity {
+public class AntipastiEntity {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_portata")
@@ -20,8 +20,8 @@ public class AntipastiEntity implements JPAEntity {
 	@JoinColumn(name = "id_menu")
 	private MenuEntity menuEntity;
 
-	public void setMenuEntity(MenuEntity me) {
-		this.menuEntity = me;
+	public void setMenuEntity(MenuEntity menuEntity) {
+		this.menuEntity = menuEntity;
 	}
 	// getters, setters, equals, hashcode
 

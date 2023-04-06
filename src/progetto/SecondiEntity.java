@@ -8,12 +8,10 @@ import javax.persistence.Table;
 
 
 
-@SuppressWarnings("serial")
 @Entity
 @Table(name= "Secondi")
 	
-public class SecondiEntity implements JPAEntity{
-	
+public class SecondiEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_portata")

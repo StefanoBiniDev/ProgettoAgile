@@ -4,10 +4,9 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@SuppressWarnings("serial")
 @Entity
 @Table(name = "bevande")
-public class BevandeEntity implements JPAEntity{
+public class BevandeEntity {
 	@Id
 	@Column(name = "id_portata")
 	private Integer id;

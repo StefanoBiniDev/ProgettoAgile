@@ -5,11 +5,10 @@ import java.util.*;
 
 import javax.persistence.*;
 
-@SuppressWarnings("serial")
 @Entity
 @Table(name = "Menu")
-public class MenuEntity implements JPAEntity{
-
+public class MenuEntity {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_portata")
@@ -53,4 +52,9 @@ public class MenuEntity implements JPAEntity{
 
 		this.antipasti.add(antipastiEntity);
 	}
+	/*public void fakeFunction() {
+		EntityManager em = new EntityManager();
+		TypedQuery<AntipastiEntity>q = em.createQuery("SELECT * FROM AntipastiEntity where id = 1",AntipastiEntity.class);
+
+	}*/
 }
