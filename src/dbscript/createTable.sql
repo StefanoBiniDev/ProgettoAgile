@@ -23,7 +23,7 @@ foreign key (id_menu) references menu(id_menu)
 CREATE TABLE contorni(
 id_contorno int auto_increment,
 nome varchar(100) not null, 
-prezzo decimal(5,2) NOT NULL, 
+prezzo decimal(5,2) NOT NULL,  
 descrizione varchar(100),
 tipo VARCHAR (100),
 id_menù int not null,
