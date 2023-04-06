@@ -23,9 +23,15 @@ public class ContornoEntity {
 	@Column(name= "prezzo")
 	private Double prezzo;
 	
+	@Column(name ="descrizione")
+	private String descrizione;
+	
+	@Column(name ="tipo")
+	private String tipo;
+
 	
 	@ManyToOne
-	@JoinColumn(name = "id_menù")
+	@JoinColumn(name = "id_menu")
 	private MenuEntity menuEntity;
 	
 
@@ -79,10 +85,5 @@ public class ContornoEntity {
 		this.tipo = tipo;
 	}
 
-	@Column(name ="descrizione")
-	private String descrizione;
-	
-	@Column(name ="tipo")
-	private String tipo;
 
 }
