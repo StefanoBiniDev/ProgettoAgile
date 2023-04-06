@@ -5,6 +5,8 @@ CREATE TABLE menu (
   PRIMARY KEY (id_menu)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+-------------------Antipasti------------------
+
 CREATE TABLE antipasti (
 id_portata int NOT NULL AUTO_INCREMENT, 
 nome varchar(100) not null, 
@@ -15,6 +17,7 @@ PRIMARY KEY (id_portata),
 foreign key (id_menu) references menu(id_menu)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+-------------------Primi------------------
 
 CREATE TABLE primi (
 id_primi INT NOT NULL AUTO_INCREMENT,
