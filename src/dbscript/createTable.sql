@@ -15,3 +15,19 @@ id_menu int not null,
 PRIMARY KEY (id_portata),
 foreign key (id_menu) references menu(id_menu)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+--------------------Antipasti----------------------------
+
+
+CREATE TABLE contorni(
+id_contorno int auto_increment,
+nome varchar(100) not null, 
+prezzo decimal(5,2) NOT NULL, 
+descrizione varchar(100),
+tipo VARCHAR (100),
+id_menù int not null,
+primary key(id_contorno),
+foreign key(id_menù) references menù(id_menù));
+
+-------------------Contorni------------------
